@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2FFE0E782C1F5C2500A6E6CD /* FitbodTakeHomeAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0E772C1F5C2500A6E6CD /* FitbodTakeHomeAssessmentApp.swift */; };
-		2FFE0E7A2C1F5C2500A6E6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0E792C1F5C2500A6E6CD /* ContentView.swift */; };
 		2FFE0E7C2C1F5C2700A6E6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFE0E7B2C1F5C2700A6E6CD /* Assets.xcassets */; };
 		2FFE0E7F2C1F5C2700A6E6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFE0E7E2C1F5C2700A6E6CD /* Preview Assets.xcassets */; };
 		2FFE0E892C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0E882C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentTests.swift */; };
 		2FFE0E932C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0E922C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITests.swift */; };
 		2FFE0E952C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0E942C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITestsLaunchTests.swift */; };
+		2FFE0EAC2C1F6AFC00A6E6CD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE0EAB2C1F6AFC00A6E6CD /* NetworkService.swift */; };
+		2FFE0EB12C1F6B3800A6E6CD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFE0EB02C1F6B3800A6E6CD /* Networking */; };
+		2FFE0EB42C1F817700A6E6CD /* ExerciseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFE0EB32C1F817700A6E6CD /* ExerciseUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		2FFE0E742C1F5C2500A6E6CD /* FitbodTakeHomeAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitbodTakeHomeAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFE0E772C1F5C2500A6E6CD /* FitbodTakeHomeAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbodTakeHomeAssessmentApp.swift; sourceTree = "<group>"; };
-		2FFE0E792C1F5C2500A6E6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FFE0E7B2C1F5C2700A6E6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FFE0E7E2C1F5C2700A6E6CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FFE0E842C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitbodTakeHomeAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,10 @@
 		2FFE0E8E2C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitbodTakeHomeAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFE0E922C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbodTakeHomeAssessmentUITests.swift; sourceTree = "<group>"; };
 		2FFE0E942C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbodTakeHomeAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FFE0EA82C1F61B900A6E6CD /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		2FFE0EAB2C1F6AFC00A6E6CD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2FFE0EB22C1F74E700A6E6CD /* ExerciseUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ExerciseUI; sourceTree = "<group>"; };
+		2FFE0EBB2C20060400A6E6CD /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFE0EB12C1F6B3800A6E6CD /* Networking in Frameworks */,
+				2FFE0EB42C1F817700A6E6CD /* ExerciseUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +81,12 @@
 		2FFE0E6B2C1F5C2500A6E6CD = {
 			isa = PBXGroup;
 			children = (
+				2FFE0EA52C1F5FE700A6E6CD /* Packages */,
 				2FFE0E762C1F5C2500A6E6CD /* FitbodTakeHomeAssessment */,
 				2FFE0E872C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentTests */,
 				2FFE0E912C1F5C2700A6E6CD /* FitbodTakeHomeAssessmentUITests */,
 				2FFE0E752C1F5C2500A6E6CD /* Products */,
+				2FFE0EAD2C1F6B3200A6E6CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +103,8 @@
 		2FFE0E762C1F5C2500A6E6CD /* FitbodTakeHomeAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				2FFE0EAA2C1F6AE500A6E6CD /* Services */,
 				2FFE0E772C1F5C2500A6E6CD /* FitbodTakeHomeAssessmentApp.swift */,
-				2FFE0E792C1F5C2500A6E6CD /* ContentView.swift */,
 				2FFE0E7B2C1F5C2700A6E6CD /* Assets.xcassets */,
 				2FFE0E7D2C1F5C2700A6E6CD /* Preview Content */,
 			);
@@ -127,6 +136,31 @@
 			path = FitbodTakeHomeAssessmentUITests;
 			sourceTree = "<group>";
 		};
+		2FFE0EA52C1F5FE700A6E6CD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE0EBB2C20060400A6E6CD /* Domain */,
+				2FFE0EB22C1F74E700A6E6CD /* ExerciseUI */,
+				2FFE0EA82C1F61B900A6E6CD /* Networking */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		2FFE0EAA2C1F6AE500A6E6CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE0EAB2C1F6AFC00A6E6CD /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2FFE0EAD2C1F6B3200A6E6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +177,10 @@
 			dependencies = (
 			);
 			name = FitbodTakeHomeAssessment;
+			packageProductDependencies = (
+				2FFE0EB02C1F6B3800A6E6CD /* Networking */,
+				2FFE0EB32C1F817700A6E6CD /* ExerciseUI */,
+			);
 			productName = FitbodTakeHomeAssessment;
 			productReference = 2FFE0E742C1F5C2500A6E6CD /* FitbodTakeHomeAssessment.app */;
 			productType = "com.apple.product-type.application";
@@ -257,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFE0E7A2C1F5C2500A6E6CD /* ContentView.swift in Sources */,
+				2FFE0EAC2C1F6AFC00A6E6CD /* NetworkService.swift in Sources */,
 				2FFE0E782C1F5C2500A6E6CD /* FitbodTakeHomeAssessmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +626,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FFE0EB02C1F6B3800A6E6CD /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		2FFE0EB32C1F817700A6E6CD /* ExerciseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExerciseUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FFE0E6C2C1F5C2500A6E6CD /* Project object */;
 }
