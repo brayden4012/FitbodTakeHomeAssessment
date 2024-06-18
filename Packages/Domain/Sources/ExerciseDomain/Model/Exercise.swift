@@ -56,19 +56,22 @@ public extension Array where Element == Exercise {
         Dictionary(grouping: self, by: { $0.date })
     }
     
-    var averageOneRepMax: Decimal {
-        var sumOneRepMax = Decimal.zero
+    var overallOneRepMax: Decimal {
+        var max = Decimal.zero
         forEach {
-            sumOneRepMax += $0.oneRepMax
+            let oneRepMax = $0.oneRepMax
+            if oneRepMax > max {
+                max = oneRepMax
+            }
         }
         
-        return sumOneRepMax / Decimal(count)
+        return max
     }
     
-    var averageOneRepMaxDisplay: String {
+    var overallOneRepMaxDisplay: String {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = .zero
-        return formatter.string(from: NSDecimalNumber(decimal: averageOneRepMax)) ?? "--"
+        return formatter.string(from: NSDecimalNumber(decimal: overallOneRepMax)) ?? "--"
     }
 }
 

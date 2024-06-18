@@ -32,7 +32,7 @@ struct ExerciseDetailsScreen: View {
         Chart(exercises, id: \.self) {
             LineMark(
                 x: .value("Date", $0[0].date),
-                y: .value("One Rep Max", $0.averageOneRepMax)
+                y: .value("One Rep Max", $0.overallOneRepMax)
             )
             .symbol {
                 Circle()
@@ -82,13 +82,18 @@ struct ExerciseDetailsScreen: View {
     }
     
     private var yAxisDomain: ClosedRange<Decimal> {
-        let sorted = exercises.map { $0.averageOneRepMax }.sorted()
-        return sorted[0]...sorted[sorted.count - 1]
+        return sortedOneRepMaxes[0]...sortedOneRepMaxes[sortedOneRepMaxes.count - 1]
     }
     
     private var yAxisValues: [Decimal] {
-        let sorted = exercises.map { $0.averageOneRepMax }.sorted()
-        return [sorted[0], sorted[sorted.count - 1]]
+        return [
+            sortedOneRepMaxes[0],
+            sortedOneRepMaxes[sortedOneRepMaxes.count - 1]
+        ]
+    }
+    
+    private var sortedOneRepMaxes: [Decimal] {
+        exercises.map { $0.overallOneRepMax }.sorted()
     }
     
     private var xAxisValues: AxisMarkValues {

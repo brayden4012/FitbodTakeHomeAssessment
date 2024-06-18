@@ -18,7 +18,7 @@ struct ExerciseRowView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
-                Text(exercises.averageOneRepMaxDisplay)
+                Text(exercises.overallOneRepMaxDisplay)
                     .font(.largeTitle)
             }
             Text("One Rep Max • lbs")
